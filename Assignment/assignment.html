@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+<header id="nav">
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="top">
+    <h3>Tables and Forms Assignment</h3>
+</section>
+
+<section id="about">
+    <p>This is About</p>
+</section>
+
+<section id="table">
+    <table>
+        <tr>
+            <td colspan="4" class="title">
+                My tech stock pick
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="symbol-header">Symbol</td>
+            <td class="images-header">Images</td>
+            <td class="contact-header">Contact</td>
+        </tr>
+        <tr>
+            <td class="name-label">Name</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Microsofti</td>
+            <td>MSFT</td>
+            <td><img src="../gallery/image.jpg" alt="microsoft laptop"></td>
+            <td>
+                <ul>
+                    <li>Email: microsofti@mc.se</li>
+                    <li>&copy;2013 <b>Microsoft</b> Corporation</li>
+                </ul>
+                <ol>
+                    <li>Email: microsofti@mc.se</li>
+                    <li>&copy;2026 <b>Microsoft</b> Corporation</li>
+                </ol>
+            </td>
+        </tr>
+        <tr>
+            <td>Cisco Systems</td>
+            <td>CSCO</td>
+            <td><img src="../gallery/image.jpg" alt="cisco switch"></td>
+            <td>
+                <b>Switch</b><br>
+                <a href="https://www.uk.hardware.info">www.uk.hardware.info</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" class="footer-row">&copy;<b><i>BIT 202</i></b></td>
+        </tr>
+    </table>
+</section>
+
+<section id="form">
+    <div class="form-box">
+        <h4 class="step-title">Step 1 of 5</h4>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-row">
+                <label for="surname">Sur Name</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="form-row">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname">
+            </div>
+            <div class="form-row">
+                <label for="othernames">Other Names</label>
+                <input type="text" id="othernames" name="othernames">
+            </div>
+            <div class="form-row">
+                <label>Gender</label>
+                <span>
+                    <input type="radio" name="gender" id="male"> <label for="male" class="inline-label">Male</label>
+                    <input type="radio" name="gender" id="female"> <label for="female" class="inline-label">Female</label>
+                </span>
+            </div>
+            <div class="form-row">
+                <label for="marital">Marital Status</label>
+                <select id="marital" name="marital">
+                    <option>Select - Status</option>
+                    <option>Single</option>
+                    <option>Married</option>
+                    <option>Divorced</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="dob">Date of Birth</label>
+                <input type="text" id="dob" name="dob">
+            </div>
+            <div class="form-row">
+                <label for="pob">Place of Birth</label>
+                <input type="text" id="pob" name="pob">
+            </div>
+            <div class="form-row">
+                <label for="mother">Mothers Name</label>
+                <input type="text" id="mother" name="mother">
+            </div>
+            <div class="form-row">
+                <label for="father">fathers Name</label>
+                <input type="text" id="father" name="father">
+            </div>
+            <div class="form-row">
+                <label for="dependants">number of Dependants</label>
+                <select id="dependants" name="dependants">
+                    <option>Select - No of Dependants</option>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3+</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="education">level of Education</label>
+                <input type="text" id="education" name="education">
+            </div>
+
+            <fieldset class="inner-fieldset">
+                <legend>Security Information</legend>
+                <div class="form-row">
+                    <label for="username">UserName</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-row">
+                    <label for="repassword">Re-type Password</label>
+                    <input type="password" id="repassword" name="repassword">
+                </div>
+                <div class="form-row">
+                    <label for="secquestion">Security Question</label>
+                    <select id="secquestion" name="secquestion">
+                        <option>Select - Question</option>
+                        <option>First pet's name</option>
+                        <option>Favourite teacher</option>
+                        <option>City of birth</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="answer">Answer</label>
+                    <input type="text" id="answer" name="answer">
+                </div>
+            </fieldset>
+
+            <div class="button-row">
+                <button type="button" class="step-btn">Previous</button>
+                <button type="button" class="step-btn">Next</button>
+            </div>
+        </fieldset>
+
+        <div class="form-footer">Copyright &copy; 2011 all rights reserved</div>
+    </div>
+</section>
+<section id="contact">
+    <a href="mailto:antechittech@gmail.com">Email</a>
+    <a href="https://github.com/Antech-greyhat">Github</a>
+</section>
+</body>
+</html>
