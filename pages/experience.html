@@ -2,55 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Experience Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal experience - Antony Mwendwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Zilla+Slab:wght@700&display=swap">
     <link rel="stylesheet" href="../cv.css">
 </head>
-<body>
-<nav>
+<body class="experience">
+<nav class="menu" aria-label="Top menu">
     <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="hobby.html">Hobby</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="experience.html" aria-current="page">Personal experience</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
     </ul>
 </nav>
-<section id="education">
-    <h2>Education</h2>
-    <article>
-        <h3>Kisii University</h3>
-        <p>Bachelor Of Science In Information Technology. | Year 2</p>
-    </article>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <ol>
-        <li>Web Development (Html, CSS and JavaScript).</li>
-        <li>CyberSecurity (Ethical Hacking and Penetration Testing).</li>
-        <li>Cloud (AWS, DevSecOps).</li>
-    </ol>
-</section>
-<section id="experience">
-    <h2>Personal Experience</h2>
-    <table>
-        <tr>
-            <th>Date</th>
-            <th>Institution Attended</th>
-            <th>Award Given</th>
-        </tr>
-        <tr>
-            <td>2024 - Present</td>
-            <td>Kisii University</td>
-            <td>BSc Information Technology (in progress)</td>
-        </tr>
-        <tr>
-            <td>2025</td>
-            <td>CyberPatch (self-founded)</td>
-            <td>Founder — SME cybersecurity protection</td>
-        </tr>
+<div class="name-band">
+    <h1>Antony Mwendwa</h1>
+</div>
+<main>
+    <h2>Personal experience</h2>
+    <table class="cv-table" border="1">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Institutions attended</th>
+                <th scope="col">Awards given</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2025 - Present</td>
+                <td>Kisii University</td>
+                <td>BSc Information Technology (in progress)</td>
+            </tr>
+            <tr>
+                <td>2021 - 2024</td>
+                <td>Shimo La Tewa High School</td>
+                <td>Kenya Certificate of Secondary Education (KCSE)</td>
+            </tr>
+            <tr>
+                <td>2012 - 2020</td>
+                <td>Kijiweni Primary School</td>
+                <td>Kenya Certificate of Primary Education (KCPE)</td>
+            </tr>
+        </tbody>
     </table>
-</section>
+    <h3>Skills</h3>
+    <ul>
+        <li>Web development (HTML, CSS and JavaScript)</li>
+        <li>Cybersecurity (ethical hacking and penetration testing)</li>
+        <li>Cloud (AWS, DevSecOps)</li>
+    </ul>
+</main>
 <footer>
-    <p>&copy; 2026 Antony Mwendwa</p>
+<nav class="menu" aria-label="Bottom menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="experience.html" aria-current="page">Personal experience</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+    </ul>
+</nav>
+    <p class="copyright">&copy; 2026 Antony Mwendwa. All rights reserved.</p>
 </footer>
 </body>
 </html>
