@@ -2,27 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacts - Antony Mwendwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Zilla+Slab:wght@700&display=swap">
     <link rel="stylesheet" href="../cv.css">
 </head>
-<body>
-<nav>
+<body class="contacts">
+<nav class="menu" aria-label="Top menu">
     <ul>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
+        <li><a href="experience.html">Personal experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contacts</a></li>
         <li><a href="hobby.html">Hobbies</a></li>
     </ul>
 </nav>
-<section id="contact">
-    <h2>Contact</h2>
-    <p><a href="mailto:antechittech@gmail.com">Email Me</a></p>
-    <p><a href="https://github.com/Antech-greyhat">Github</a></p>
-    <p><a href="https://github.com/Antech-greyhat">Discord</a></p>
-    <p><a href="https://www.linkedin.com/in/antony-mwendwa-07679336b/">linkedin</a></p>
-</section>
-<hr>
+<div class="name-band">
+    <h1>Antony Mwendwa</h1>
+</div>
+<main>
+    <h2>Contacts</h2>
+    <p><a class="email-link" href="mailto:antechittech@gmail.com">Email me</a></p>
+    <ul class="contact-list">
+        <li>Email: antechittech@gmail.com</li>
+        <li>GitHub: <a href="https://github.com/Antech-greyhat">Antech-greyhat</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/antony-mwendwa-07679336b/">Antony Mwendwa</a></li>
+    </ul>
+    <hr>
+    <form class="message-form" id="message-form" action="mailto:antechittech@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Enter your Name:</label>
+        <input type="text" id="name" name="name" autocomplete="name">
+
+        <label for="email">E-mail address*:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+
+        <label for="subject">Message Subject:</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Enter your Message*:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label class="copy-me">
+            <input type="checkbox" id="copy" name="copy">
+            E-mail a copy of this message to your own address.
+        </label>
+
+        <button type="submit">Send</button>
+        <p class="form-status" id="form-status" role="status"></p>
+    </form>
+</main>
 <footer>
-    <p>&copy; 2026 Antony Mwendwa</p>
+<nav class="menu" aria-label="Bottom menu">
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="experience.html">Personal experience</a></li>
+        <li><a href="contact.html" aria-current="page">Contacts</a></li>
+        <li><a href="hobby.html">Hobbies</a></li>
+    </ul>
+</nav>
+    <p class="copyright">&copy; 2026 Antony Mwendwa. All rights reserved.</p>
 </footer>
+<script>
+    // Opens the visitor's mail app with the message already filled in.
+    document.getElementById("message-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+        var body = "From: " + name + " (" + email + ")\n\n" + message;
+        var link = "mailto:antechittech@gmail.com?subject=" + encodeURIComponent(subject) +
+            "&body=" + encodeURIComponent(body);
+        if (document.getElementById("copy").checked) {
+            link += "&cc=" + encodeURIComponent(email);
+        }
+        window.location.href = link;
+        document.getElementById("form-status").textContent =
+            "Your mail app is opening with this message. Press send there to finish.";
+    });
+</script>
 </body>
 </html>

@@ -2,32 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Antony Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Antony Mwendwa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Zilla+Slab:wght@700&display=swap">
     <link rel="stylesheet" href="cv.css">
 </head>
-<body>
-<header id="top">
-    <h1>Antony Mwendwa</h1>
-    <p>Ethical Hacker and Penetration Tester.</p>
-</header>
-<nav>
+<body class="home">
+<nav class="menu" aria-label="Top menu">
     <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="pages/experience.html">Personal Experience</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="pages/experience.html">Personal experience</a></li>
+        <li><a href="pages/contact.html">Contacts</a></li>
         <li><a href="pages/hobby.html">Hobbies</a></li>
-        <li><a href="pages/contact.html">Contact</a></li>
     </ul>
 </nav>
-<img src="gallery/image.jpg" alt="image" id="profile-photo">
-<hr>
-
-<section id="about">
-    <h2>About Me..</h2>
-    <p>Hello My Name is Antony | IT student and CyberSecurity Enthusiast</p>
-    <p>After School i Hope to Become a Ethical Hacker and Penetration Tester.</p>
-</section>
+<div class="name-band">
+    <h1>Antony Mwendwa</h1>
+</div>
+<main>
+    <div class="intro">
+        <img src="gallery/image.jpg" alt="Photo of Antony Mwendwa" class="photo">
+        <p class="tagline">IT student and cybersecurity enthusiast</p>
+    </div>
+    <hr>
+    <h2>About me</h2>
+    <div class="about-row">
+        <h3>My names</h3>
+        <p>My name is Antony Mwendwa.</p>
+    </div>
+    <div class="about-row">
+        <h3>My course</h3>
+        <p>I am in my second year of a Bachelor of Science in Information Technology at Kisii University. My admission number is IN17/00257/25.</p>
+    </div>
+    <div class="about-row">
+        <h3>My background</h3>
+        <p>I work with HTML, CSS and JavaScript, and I spend most of my spare time on ethical hacking and backend development. I am also learning cloud work on AWS and DevSecOps. In 2025 I started CyberPatch, which helps small and medium businesses protect themselves from cyber attacks.</p>
+    </div>
+    <div class="about-row">
+        <h3>After my course</h3>
+        <p>After school I hope to become an ethical hacker and penetration tester.</p>
+    </div>
+</main>
 <footer>
-    <p>&copy; 2026 Antony Mwendwa</p>
+<nav class="menu" aria-label="Bottom menu">
+    <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="pages/experience.html">Personal experience</a></li>
+        <li><a href="pages/contact.html">Contacts</a></li>
+        <li><a href="pages/hobby.html">Hobbies</a></li>
+    </ul>
+</nav>
+    <p class="copyright">&copy; 2026 Antony Mwendwa. All rights reserved.</p>
 </footer>
 </body>
 </html>
